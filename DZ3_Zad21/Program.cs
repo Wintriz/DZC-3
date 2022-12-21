@@ -2,12 +2,15 @@
 // A (3,6,8); B (2,1,-7), -> 15.84
 // A (7,-5, 0); B (1,-1,9) -> 11.53
 Console.WriteLine("Введите координату А");
-double A1 = double.Parse(Console.ReadLine()!);
-double A2 = double.Parse(Console.ReadLine()!);
-double A3 = double.Parse(Console.ReadLine()!);
+double AX = double.Parse(Console.ReadLine()!);
+double AY = double.Parse(Console.ReadLine()!);
+double AZ = double.Parse(Console.ReadLine()!);
 Console.WriteLine("Введите координату В");
-double B1 = double.Parse(Console.ReadLine()!);
-double B2 = double.Parse(Console.ReadLine()!);
-double B3 = double.Parse(Console.ReadLine()!);
+double BX = double.Parse(Console.ReadLine()!);
+double BY = double.Parse(Console.ReadLine()!);
+double BZ = double.Parse(Console.ReadLine()!);
+double AB = Math.Sqrt((BX-AX) * (BX-AX) + (BY-AY) * (BY-AY) + (BZ-AZ) * (BZ-AZ));
+Console.Write("Расстояние между точками А и В = ");
+Console.WriteLine(AB);
 
 
